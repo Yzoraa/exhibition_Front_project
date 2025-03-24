@@ -1,5 +1,22 @@
-.card-img img {
-    height: 200px;
+.card-img {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ant-card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-cover{
+    height: 300px;
+    overflow: "hidden";
+}
+
+.card-cover img {
+    height: 100%;
     object-fit: cover;
     width: 100%;
 }
@@ -11,6 +28,7 @@
 }
 
 .dscrip {
+    flex-grow: 1; /* 설명 부분이 부족해도 전체 높이를 맞춤 */
     color: gray;
     font-size: 14px;
     text-align: left;

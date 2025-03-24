@@ -37,7 +37,7 @@ const MainPage = () => {
   // 필터링된 전시 목록
   const filteredExhibitions = exhibitions.filter((exhibition) => {
     if (selectedGenre === "진행전시") {
-      return ["전시", "현재전시"].includes(exhibition.genre);
+      return [ "전시", "현재전시"].includes(exhibition.genre);
     }
     return exhibition.genre === selectedGenre;
   });
@@ -47,7 +47,7 @@ const MainPage = () => {
       <h2>전시 목록</h2>
 
       {/* 네비게이션 필터 버튼 */}
-      <div style={{ marginBottom: "20px" }}>
+      <div style={{ marginBottom: "40px" }}>
         {["진행전시", "예정전시", "과거전시"].map((genre) => (
           <Button
             key={genre}

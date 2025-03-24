@@ -7,7 +7,11 @@ const List = ({ exhibitions, onShowMap }) => {
       {exhibitions.map((exhibition) => (
         <Col xs={24} sm={12} md={8} lg={6} key={exhibition.id}>
           <Card className="card-img"
-            cover={<img alt={exhibition.title} src={exhibition.image_url} />}
+            cover={
+              <div className="card-cover">
+                <img alt={exhibition.title} src={exhibition.image_url} />
+              </div>
+            }
           >
             <div className="title">{exhibition.title}</div>
             <div className="dscrip">

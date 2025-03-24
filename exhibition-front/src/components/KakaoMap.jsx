@@ -1,4 +1,3 @@
-// KakaoMap.jsx
 import { useEffect, useState } from "react";
 import { Map, MapMarker, useKakaoLoader } from "react-kakao-maps-sdk";
 
@@ -10,10 +9,16 @@ const KakaoMap = ({ lat, lng, name }) => {
   });
 
   useEffect(() => {
+    console.log("Lat, Lng:", lat, lng);
     if (!loading && lat !== null && lng !== null) {
       setPosition({ lat, lng }); // lat, lng 값으로 위치 업데이트
     }
   }, [lat, lng, loading]);
+
+  // position 상태가 변경될 때마다 로그를 찍어 위치 확인
+  useEffect(() => {
+    console.log("Position updated:", position);
+  }, [position]);
 
   // 로딩 중일 때나 에러가 있을 경우
   if (loading) return <p>지도를 불러오는 중...</p>;
