@@ -1,0 +1,24 @@
+.card-img img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #333;
+}
+
+.dscrip {
+    color: gray;
+    font-size: 14px;
+    text-align: left;
+}
+
+.card-button {
+    color: #1890ff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 0;
+}
