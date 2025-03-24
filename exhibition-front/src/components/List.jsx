@@ -9,14 +9,17 @@ const List = ({ exhibitions, onShowMap }) => {
           <Card className="card-img"
             cover={<img alt={exhibition.title} src={exhibition.image_url} />}
           >
-        <div className="title">{exhibition.title}</div>
-        <div className="dscrip">
-            <p className="institution-name">기관: {exhibition.institution.name}</p>
-            <p className="institution-period">기간: {exhibition.period}</p>
-            <p className="institution-contact">문의: {exhibition.institution.contact_point || exhibition.institution.url.match(/^https?:\/\/[^\/]+/)[0]} </p>
-        </div>
+            <div className="title">{exhibition.title}</div>
+            <div className="dscrip">
+                <p className="institution-name">기관: {exhibition.institution.name}</p>
+                <p className="institution-period">기간: {exhibition.period}</p>
+                <p className="institution-contact">문의: {exhibition.institution.contact_point || exhibition.institution.url.match(/^https?:\/\/[^\/]+/)[0]} </p>
+            </div>
             
-            <Button type="link" onClick={() => onShowMap(exhibition.institution)}>위치</Button>
+            <Button type="link" onClick={() => {
+              console.log('기관 정보:', exhibition.institution);
+              onShowMap(exhibition.institution)
+            }}>위치</Button>
           </Card>
         </Col>
       ))}
