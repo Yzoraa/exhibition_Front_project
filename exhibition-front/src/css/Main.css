@@ -1,6 +1,5 @@
-/* App.css 또는 글로벌 스타일 */
 .map-container {
-    height: 400px; /* 고정된 높이 */
-    width: 100%;   /* 너비는 100% */
-    margin-Top: "30px";
-  }
+  height: 400px;
+  width: 100%;
+  margin: 30px 0;
+}

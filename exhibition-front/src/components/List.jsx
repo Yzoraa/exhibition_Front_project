@@ -1,5 +1,6 @@
 import { Card, Row, Col, Button } from "antd";
 import "../css/List.css";
+import noImg from "../assets/noImg.png"
 
 const List = ({ exhibitions, onShowMap }) => {
   return (
@@ -9,7 +10,7 @@ const List = ({ exhibitions, onShowMap }) => {
           <Card className="card-img"
             cover={
               <div className="card-cover">
-                <img alt={exhibition.title} src={exhibition.image_url} />
+                <img alt={exhibition.title} src={exhibition.image_url || noImg } />
               </div>
             }
           >

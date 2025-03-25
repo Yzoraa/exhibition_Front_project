@@ -24,8 +24,8 @@ const MainPage = () => {
     console.log('선택한 기관:', x);
     setMapSelect({
       name: x.name,
-      lat: parseFloat(x.latitude),
-      lng: parseFloat(x.longitude),
+      lat: parseFloat(x.longitude),
+      lng: parseFloat(x.latitude),
     });
   };
 
