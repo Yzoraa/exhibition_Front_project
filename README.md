@@ -1,6 +1,6 @@
 <h2>:question: 프로젝트 소개</h2>
-<p>오픈API 활용한 가상 '전시정보 알림 웹사이트' 입니다.</p>
-<p>JSX(JavaScript), REACT(Vite)를 사용해 데이터 공유를 진행했습니다.</p>
+<p>문화체육관광부 API를 활용하여 전시 정보를 제공하는 웹사이트의 프론트엔드입니다.</p>
+<p>JSX와 REACT(Vite)를 사용하여 시각적으로 제공했습니다.</p>
 <p>백엔드 진행 : <b>exhibition_Back_project</b></p>
 <br /><br />
 
