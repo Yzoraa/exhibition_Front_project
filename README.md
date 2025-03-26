@@ -5,7 +5,7 @@
 <br /><br />
 
 
-<h2>📋 ERD 다이어그램</h2>
+<h2>📋 ERD</h2>
 <img src="https://github.com/user-attachments/assets/354ce055-8097-4f76-bb06-10282678a256">
 <br /><br /><br />
 
