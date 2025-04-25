@@ -1,7 +1,7 @@
 <h2>:question: 프로젝트 소개</h2>
 <p>문화체육관광부 API를 활용하여 전시 정보를 제공하는 웹사이트의 프론트엔드입니다.</p>
 <p>JSX와 REACT(Vite)를 사용하여 시각적으로 제공했습니다.</p>
-<p>백엔드 진행 : <a herf https://github.com/Yzoraa/exhibition_Back_project><b>exhibition_Back_project</b></a></p>
+<p>백엔드 진행 : <a herf=https://github.com/Yzoraa/exhibition_Back_project><b>exhibition_Back_project</b></a></p>
 <br /><br />
 
 
